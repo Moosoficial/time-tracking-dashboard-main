@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+:root{
+
+--Blue: hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+--Verydark-blue: hsl(226, 43%, 10%);
+--Darkblue: hsl(235, 46%, 20%);
+--Desaturate-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+
+--font-family: font-family: 'Rubik', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Verydark-blue);
+    font-family: var(--font-family);
+    color: var(--Pale-Blue);
+}
+
+.attribution {
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+.main-container{
+    font-family: 'Rubik', sans-serif;
+    width: 328px;
+    margin: 77px auto;
+}
+
+.primera-section{
+    position: relative;
+}
+
+.main-card__user{
+    background-color: var(--Blue);
+    display: flex;
+    border-radius: 16px;   
+    padding: 30px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.main-card__image{
+    width: 72px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-card__title{
+    font-weight: 300;
+    margin: 10px 0 4px;
+    font-size: 16px;
+}
+
+.main-card__name{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+}
+
+.main-card__dates{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 52px;
+    background-color: var(--Darkblue);
+    border-radius: 16px;
+    height: 100px;
+    font-size: 1.2em;
+    position: absolute;
+    width: 100%;
+    top: 102px;
+
+}
+
+.active{
+    color: white;
+}
+
+.main-card__historial:hover{
+    cursor: pointer;
+    color:  white;
+}
+
+.second-section{
+    padding-top: 240px;
+  
+}
+
+.card{
+    position: relative;
+    margin-bottom: 105px;
+}
+
+.card__background{
+    background-color: var(--Light-red-work);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px ;
+    height: 80px;
+    overflow: hidden;
+}
+
+.card__image{
+    margin-top: -10px;
+    padding-left: 235px;
+}
+
+
+.main__details{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Darkblue);
+    height: 122px;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+}
+
+.main__details:hover{
+    background-color: var(--Desaturate-blue);
+    cursor: pointer;
+}
+
+.main_title{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main__activity, .card__inferior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__puntos{
+    cursor: pointer;
+}
+
+.main__activity{
+    color: white;
+}
+
+.card__hours{
+    font-size: 2.1em;
+    font-weight: 300;
+    color: white;
+}
+
+.card__previous{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media (min-width:1200px){
+
+    .main-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 180px;
+        width: 1150px;
+        height: 523px;
+
+    }
+
+    .primera-section{
+        width: 290px;
+        height: 523px;
+        padding-top: 0;
+    }
+
+    .second-section{
+       display: grid;   
+       grid-template-columns: repeat(3, 1fr);
+       padding: 25px;
+       gap: 20px;
+    }
+
+    .main-card__user{
+       display: flex;
+       flex-direction: column;
+       width: 258px;
+       height: 356px;
+    }
+
+    .main-card__image{
+        width: 85px;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+   
+    .main-card__name{
+        font-size: 2.5em;
+        font-weight: 300;
+        color: white;
+    }
+
+    .main-card__dates{
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        height: 180px;
+        padding: 30px;
+        width: 257px;
+        top: 90px;
+    }
+
+    .second-section{
+        padding: 0px;
+        gap: 30px;
+      
+    }
+    .card__image{
+        margin-top: -10px;
+        padding-left: 170px;
+    }
+
+    .card{
+        width: 257px;
+    }
+
+    .main__details{
+        height: 204px;
+    }
+
+    .card__inferior{
+        color: white;
+        display: grid;
+        height: 110px;
+    }
+    
+    .card__hours{
+        font-size: 3.1em;
+        font-weight: 300;
+        color: white;
+    }
+    
+    .card__previous{
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
